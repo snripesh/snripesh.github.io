@@ -1,85 +1,108 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Profile Page</title>
-	 <link rel="stylesheet" href="profile.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sharan Nripesh | Profile</title>
+    <link rel="stylesheet" href="profile.css" />
 </head>
 <body>
-	<header>
-		<h1>Profile Page</h1>
-	</header>
-	<div class="container">
-		<img class="profile-image" src="original_cd043f14-c7b4-4307-8334-be444e8c9e85_IMG20220629163153__01.jpg" alt="Profile Picture">
-		<div class="profile-info">
-			<h1>Sharan Nripesh</h1>
-			<p class="profile-bio">Hardworking and enthusiastic computer science candidate with problem solving and teamwork talents. Relevant skills
-                include python, data structures and java.</p>
-			<div class="profile-social">
-				<a href="https://www.linkedin.com/in/sharan-nripesh-reddy-a8104a208/" style = "text-decoration: none">LinkedIn</a>
-				<a href="https://github.com/snripesh" style = "text-decoration: none">GitHub</a>
-				<a href="Tictac/index.html" style = "text-decoration: none">Tic Tac Toe</a>
-			
-			</div>
-		</div>
-	</div>
+    <header>
+        <h1>Sharan Nripesh</h1>
+        <p class="tagline">MSc Artificial Intelligence | Deep Learning | Robotics | Problem Solver</p>
+    </header>
 
-</head>
-<body>
+    <main>
+        <section class="profile">
+            <img src="original_cd043f14-c7b4-4307-8334-be444e8c9e85_IMG20220629163153__01.jpg" alt="Profile Picture" class="profile-image" />
+            <div class="profile-details">
+                <p class="bio">
+                    Hardworking and enthusiastic computer science candidate with strengths in problem-solving and teamwork. Passionate about AI, robotics, and real-world applications of machine learning.
+                </p>
+                <div class="links">
+                    <a href="https://www.linkedin.com/in/sharan-nripesh-reddy-a8104a208/">LinkedIn</a>
+                    <a href="https://github.com/snripesh">GitHub</a>
+                    <a href="Tictac/index.html">Tic Tac Toe</a>
+                </div>
+            </div>
+        </section>
 
-    <div class="container">
-		<div class="profile-info">
-			<h1>Educational Qualification</h1>
-            
-            <p class ="profile-bio"><strong>2020 – Current :</strong> B.Tech in Artificial Intelligence, Amrita Vishwa Vidyapeetham, Amritapuri <br><strong> 2018 - 2020 :</strong> MPC, FIITJEE, Saifabad <br> <strong>2013 - 2018 :</strong> Delhi Public School, Nacharam </p>
-		</div>
-	</div>
-    <div class="container">
-		<div class="profile-info">
-			<h1>Skills</h1>
-            <p class ="profile-bio">
-                <ul>
-                    <li>Python</li>
-                    <li>Java</li>
-                    <li>Problem Solving</li>
-                    <li>Critical thinking</li>
-                    <li>Machine learning</li>
-                </ul>  
-            </p>
-		</div>
-	</div>
-    <div class="container">
-		<div class="profile-info">
-			<h1>Projects</h1>
-            <p class ="profile-bio">
-                <ul>
-                    <li><strong>Line following robot using robotic operating system</strong></li>
-                </ul>
-                <p>The robot detects the line i.e., the black line using the infrared sensor and follows the instructions to follow the black line given by the robotic operating system till the end and stops when sensor does not detect the black line. </p>
-                <ul>
-                    <li><strong>Collaborative filtering</strong></li>
-                </ul>
-                <p>Uses similarities between users and items simultaneously to provide recommendations for example when you search a movie in Netflix, it takes that movie as input and recommends movies like that one. </p>
-                <ul>
-                    <li><strong>Image Fusion</strong></li>
-                </ul>
-                <p>Taking multiple low-resolution images and making it into a single better and higher resolution image. In some cases, it may be more than a single image. </p>
-                 
-            </p>
-		</div>
-	</div>
-    <div class="container">
-		<div class="profile-info">
-			<h1>Hobbies</h1>
-            <p class ="profile-bio">
-                <ul>
-                    <li>Playing sports like cricket, badminton etc</li>
-                    <li>Watching movies</li>
-                </ul> 
-            </p>
-		</div>
-	</div>
-    
-    
+        <section class="education">
+            <h2>Educational Qualification</h2>
+            <ul>
+                <li><strong>2024 – Present:</strong> MSc in Artificial Intelligence, Queen Mary University of London</li>
+                <li><strong>2020 – 2024:</strong> B.Tech in Artificial Intelligence, Amrita Vishwa Vidyapeetham, Amritapuri</li>
+                <li><strong>2018 – 2020:</strong> MPC, FIITJEE, Saifabad</li>
+                <li><strong>2013 – 2018:</strong> Delhi Public School, Nacharam</li>
+            </ul>
+        </section>
+
+        <section class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Python, Java</li>
+                <li>Machine Learning, Deep Learning</li>
+                <li>ROS2, MediaPipe, Bayesian Models</li>
+                <li>PyTorch, Spark NLP</li>
+                <li>Critical Thinking, Problem Solving</li>
+            </ul>
+        </section>
+
+        <section class="projects">
+            <h2>Projects</h2>
+
+            <div>
+                <h3>Line Following Robot</h3>
+                <p>Built using ROS and infrared sensors, the robot autonomously follows a black line and halts when the path ends.</p>
+            </div>
+
+            <div>
+                <h3>Action Prediction Model</h3>
+                <p>
+                    A real-time ROS2 node that predicts user intention (left vs right object) using gaze, hand preshape, and arm trajectory based on a Bayesian framework. Overlays predictions on video using MediaPipe.
+                </p>
+            </div>
+
+            <div>
+                <h3>Deep CNN Image Classification</h3>
+                <p>
+                    Compared VGG16, ResNet18, and GoogleNet for classifying MNIST and CIFAR-10 datasets. Evaluated performance through loss curves and accuracy metrics.
+                </p>
+            </div>
+
+            <div>
+                <h3>Text Mining with Spark NLP</h3>
+                <p>
+                    Extracted insights from large-scale text data using Apache Spark and Spark NLP. Focused on scalable preprocessing and keyword extraction.
+                </p>
+            </div>
+
+            <div>
+                <h3>Collaborative Filtering</h3>
+                <p>
+                    Designed a recommender system that suggests content based on user-item similarities, similar to Netflix’s recommendation engine.
+                </p>
+            </div>
+
+            <div>
+                <h3>Image Fusion</h3>
+                <p>
+                    Combined multiple low-resolution images into one high-resolution image to enhance detail and clarity using image processing techniques.
+                </p>
+            </div>
+        </section>
+
+        <section class="hobbies">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Playing sports like cricket, badminton, and table tennis</li>
+                <li>Watching movies</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Sharan Nripesh. All rights reserved.</p>
+    </footer>
 </body>
 </html>
